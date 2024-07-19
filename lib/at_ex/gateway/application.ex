@@ -24,7 +24,6 @@ defmodule AtEx.Gateway.Application do
 
   @spec get_data :: {:ok, map()} | {:error, term()}
   def get_data do
-  # changed Application.get_env to 
     username = Application.fetch_env(:at_ex, :username)
 
     params =
